@@ -1,6 +1,5 @@
 import './scss/app.scss'
-// import {HMR, init} from './vue/vue'
-import {HMR, init} from './react/react'
+import {HMR, init} from './vue/vue'
 
 init();
 

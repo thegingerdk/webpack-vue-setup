@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Meta from 'vue-meta'
-import App from './components/App.vue'
+import App from './components/App'
 import {router} from './router'
 
 Vue.use(VueRouter);
