@@ -4,7 +4,8 @@ const PrerenderSpaPlugin = require('prerender-spa-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const config = require('./config.variables');
+const config = require('./config/variables');
+const routes = require('./config/routes');
 const webpack = require('webpack');
 const path = require('path');
 
@@ -163,7 +164,7 @@ if (production) {
         }),
         new PrerenderSpaPlugin(
             path.resolve(__dirname, `./${config.path}`),
-            config.routes,
+            routes,
             {}
         )
     ])
